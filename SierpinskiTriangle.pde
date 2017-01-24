@@ -1,21 +1,21 @@
-int len=700;
+int len=500;
 int opacity=60;
 color epilepsy;
 public void setup()
 {
-	size(800,800);
+	size(600,600);
 }
 public void draw()
 {
 	background(0,0,0);
 	//sierpinski(10,790,len);
 	sierCarpet(50,height-50,len);
-	if(len>1400)
+	if(len>1000)
 	{
 		len=len/3;
 		opacity=60;
 	}
-	if(len<350)
+	if(len<250)
 	{
 		len=len*3;
 		opacity=60;
@@ -34,14 +34,14 @@ public void keyPressed()
 {
 	if(key == 's')
 	{
-		len=700;
+		len=500;
 	}
 }
 
 
 public void sierpinski(int x, int y, int len) 
 {
- if(len<=20)
+ if(len<=10)
 	{
 		triangle(x,y,x+len/2,y-len,x+len,y);
 	}
@@ -55,7 +55,7 @@ public void sierpinski(int x, int y, int len)
 
 public void sierCarpet(int x, int y, int len) 
 {
- if(len<=21)
+ if(len<=10)
 	{
 		epilepsy = color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255),opacity);
 		fill(epilepsy);

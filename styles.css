@@ -28,7 +28,7 @@ ul {
 }
 
 li {
-    float: left;
+    float: center;
 }
 
 li a {
@@ -36,12 +36,10 @@ li a {
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
 }
 
 li a:hover {
     background-color: rgb(255,0,0);
-    text-decoration: line-through;
     animation-duration: text-decoration 8s;
 }
 
