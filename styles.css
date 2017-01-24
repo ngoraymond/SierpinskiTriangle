@@ -31,13 +31,6 @@ li {
     float: center;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-}
-
 li a:hover {
     background-color: rgb(255,0,0);
     animation-duration: text-decoration 8s;
