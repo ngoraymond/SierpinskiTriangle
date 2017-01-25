@@ -21,10 +21,10 @@ footer {
 }
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 10;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(130,130,130);
+    background-color: rgb(255,255,255);
 }
 
 li {
