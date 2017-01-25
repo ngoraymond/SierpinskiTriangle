@@ -38,13 +38,13 @@ public void keyPressed()
 	}
 	if(key == 'a')
 	{
-		len-=3;
-		opacity-=3;
+		len-=10;
+		opacity-=1;
 	}
 	if(key == 'd')
 	{
-		len+=3;
-		opacity+=3;
+		len+=10;
+		opacity+=1;
 	}
 }
 
