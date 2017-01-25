@@ -7,7 +7,7 @@ public void setup()
 }
 public void draw()
 {
-	background(0,0,0);
+	background(255,255,255);
 	//sierpinski(10,790,len);
 	sierCarpet(50,height-50,len);
 	if(len>1000)
@@ -36,6 +36,16 @@ public void keyPressed()
 	{
 		len=500;
 	}
+	if(key == 'a')
+	{
+		len-=3;
+		opacity-=3;
+	}
+	if(key == 'd')
+	{
+		len+=3;
+		opacity+=3;
+	}
 }
 
 
@@ -55,10 +65,11 @@ public void sierpinski(int x, int y, int len)
 
 public void sierCarpet(int x, int y, int len) 
 {
- if(len<=10)
+ if(len<=15)
 	{
 		epilepsy = color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255),opacity);
 		fill(epilepsy);
+		noStroke();
 		//fill(255,255,255);
 		rect(x,y,len,len);
 	}
